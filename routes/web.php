@@ -28,6 +28,5 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::patch('profile-email-change', [SiteController::class, 'updateEmail'])->name('profile.update-email');
     Route::patch('profile-password-change', [SiteController::class, 'updatePassword'])->name('profile.update-password');
     Route::patch('delete-account', [SiteController::class, 'deleteAccount'])->name('deleteAccount');
-
     //new
 });
